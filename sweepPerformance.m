@@ -48,7 +48,8 @@ end
 if plotSwitch==1
     subplot(1,2,1)
     loglog(sweep{1,2},AcytoMCP,'Color',[38 230 0]./256,'LineWidth',2)
-    AcytoMCP
+    AcytoMCP     % print
+    AcytoNoMCP   % print
     hold on
     plot(sweep{1,2},AcytoNoMCP,'Color',[102 25 255]./256,'LineWidth',2)
     plot(sweep{1,2},AMCPMCP,'--','Color',[38 230 0]./256,'LineWidth',2)

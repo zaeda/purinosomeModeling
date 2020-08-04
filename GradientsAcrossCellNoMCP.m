@@ -35,7 +35,7 @@ if plotSwitch
     xlabel('Radius (cm)')
     ylabel('Concentration (mM)')
     xlim([0 2.5e-4]) % [0 5e-5]
-    ylim([0 10]) % [1e-4 100]
+    ylim([1e-10 10]) % [1e-4 100]
     plot([0 p.Rb],[p.KCDE/1000 p.KCDE/1000], '--','Color',[43 172 226]./256)
     plot([0 p.Rb],[p.KPQ/1000 p.KPQ/1000], '--','Color',[248 149 33]./256)
 box off

@@ -112,7 +112,7 @@ plot(sweep{1,2},tDouble,'-','Color',[43 172 226]./256,'LineWidth',2)
 
 xlabel(['parameter: fracPQ' sweep{1,1}])
 ylabel('Doubling Time (hrs)')
-xlim([0 1])
+xlim([0 1])   
 ylim([1 10^4])
 line([1-fracCDE 1-fracCDE],ylim,'Color','k','LineStyle',':','LineWidth',1.5)
 ax=gca;

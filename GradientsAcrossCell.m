@@ -38,7 +38,7 @@ if plotSwitch
     plot([0 p.Rc], [P P],'Color',[43 172 226]./256)
     xlabel('Radius (cm)')
     ylabel('Concentration (mM)')
-    line([p.Rc p.Rc], [1e-6 1e6], 'Color', [0.5 0.5 0.5], 'LineStyle', '-.', 'LineWidth', 1)
+    line([p.Rc p.Rc], [1e-10 1e6], 'Color', [0.5 0.5 0.5], 'LineStyle', '-.', 'LineWidth', 1)    % line([p.Rc p.Rc], [1e-6 1e6], 'Color', [0.5 0.5 0.5], 'LineStyle', '-.', 'LineWidth', 1)
     xlim([0 2.5e-4]) % [0 5e-5] Rc
     ylim([0 10])    % [1e-4 100]
     plot([0 p.Rb],[p.KCDE/1000 p.KCDE/1000], '--','Color',[43 172 226]./256)

@@ -17,11 +17,13 @@ fracCDE=p.NCDE/Ntotal;
 %sweep Ntotal first
 sweep = {'',logspace(-2,3,numberofsims)};
 startValue=Ntotal;
+startValue2=p.q; % added
 
 for ii = 1:length(sweep{1,2})
    
     set(p, 'NCDE',sweep{1,2}(ii)*startValue*fracCDE);
     set(p, 'NPQ',sweep{1,2}(ii)*startValue*(1-fracCDE));
+    3 % added
 
     if equalPermSwitch
         p.kcP = p.kcA; %keep kcX the same

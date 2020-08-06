@@ -27,7 +27,7 @@ set(gca,'XTickLabel',{'No MCP','Scaffold','MCP','Sparingly Permeable MCP'})
 set(gca,'XTickLabelRotation',45);
 set(gca,'FontSize',10)
 ylabel('A_{cyto} (mM)')
-line([0,5],[8 8],'LineStyle','--','Color','r','LineWidth',2)
+% line([0,5],[8 8],'LineStyle','--','Color','r','LineWidth',2)
 ylim([10^-8, 10^2])
 xlim([0,5])
 axis square

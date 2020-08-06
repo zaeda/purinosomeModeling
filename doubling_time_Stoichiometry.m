@@ -23,7 +23,7 @@ for ii = 1:length(sweep{1,2})
    
     set(p, 'NCDE',sweep{1,2}(ii)*startValue*fracCDE);
     set(p, 'NPQ',sweep{1,2}(ii)*startValue*(1-fracCDE));
-    3 % added
+    set(p,'q',sweep{1,2}(ii)*startValue2); % added
 
     if equalPermSwitch
         p.kcP = p.kcA; %keep kcX the same

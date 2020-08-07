@@ -28,9 +28,9 @@ for ii = 1:length(sweep{1,2})
     Pfull(ii)=analytical.p_full_uM/1000;
     Afull(ii)=analytical.a_full_uM/1000;
     Pcenter(ii)=res.p_MCP_uM(end,1)/1000;
-    Acenter(ii)=res.a_MCP_uM(end,1)/1000;
+    Acenter(ii)=res.a_MCP_uM(end,1)/1000
     Pedge(ii)=res.p_MCP_uM(end,p.xnum)/1000;
-    Aedge(ii)=res.a_MCP_uM(end,p.xnum)/1000;
+    Aedge(ii)=res.a_MCP_uM(end,p.xnum)/1000
 
     
 end

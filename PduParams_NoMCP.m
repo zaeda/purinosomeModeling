@@ -53,7 +53,7 @@ classdef PduParams_NoMCP < PduParams &  matlab.mixin.SetGet
             value = obj.D * obj.KPQ / (obj.VCDE * obj.Rb^2);
         end
         function value = get.gamma(obj)
-            value = 2*obj.VPQ / obj.VCDE;
+            value = obj.VPQ / obj.VCDE;   % value = 2*obj.VPQ / obj.VCDE;
         end
         function value = get.kappa(obj)
             value = obj.KCDE / obj.KPQ;
@@ -87,7 +87,7 @@ classdef PduParams_NoMCP < PduParams &  matlab.mixin.SetGet
         end
         
         function value = get.U(obj)
-            value =(2*obj.VPQ*obj.Rc^3*(obj.D/(obj.kmA*obj.Rb^2)+obj.Xa))/(3*obj.D*obj.KPQ);
+            value =(obj.VPQ*obj.Rc^3*(obj.D/(obj.kmA*obj.Rb^2)+obj.Xa))/(3*obj.D*obj.KPQ);    % value =(2*obj.VPQ*obj.Rc^3*(obj.D/(obj.kmA*obj.Rb^2)+obj.Xa))/(3*obj.D*obj.KPQ);
         end
         
         function value = get.V(obj)
@@ -95,7 +95,7 @@ classdef PduParams_NoMCP < PduParams &  matlab.mixin.SetGet
         end
         
         function value = get.W(obj)
-            value =1/2*obj.VCDE/obj.VPQ;
+            value =obj.VCDE/obj.VPQ;    % value =1/2*obj.VCDE/obj.VPQ;
         end
         
         function value = get.Y(obj)
